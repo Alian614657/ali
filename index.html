@@ -394,7 +394,7 @@
   var preview = false;
   function tick() {
     var diff = TARGET - Date.now();
-    var open = diff <= 0 || preview;
+    var open = true;
     $("start").hidden = !open;
     $("countdown").hidden = open;
     $("hint").hidden = open;
